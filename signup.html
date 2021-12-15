@@ -34,7 +34,7 @@
         }
         .modal-content{
             width: 500px;
-            height: 300px;
+            height: 390px;
             background-color: white;
             margin-top: 3%;
             border-radius: 3%;
@@ -47,7 +47,7 @@
             margin-left: 7%;
             margin-top: 7%;
         }
-        #inp{
+        .inp{
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     
@@ -123,6 +123,13 @@
           transform: rotate(45deg);
           cursor: pointer;
       }
+      p{
+          height: 0%;
+          margin-top: 2%;
+          margin-left: 7%;
+          font-family: Metropolis, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+          font-size: 14px;
+      }
         
     </style>
 </head>
@@ -132,14 +139,15 @@
 <!--Model section-->
 <div class="bg-modal">
     <div class="modal-content">
-      <h2>Log In / Sign Up</h2>
+      <h2>Sign Up</h2>
     
-          <input type="email" id="inp" placeholder="Enter Mobile number or Email">
+          <input type="text" class="inp" placeholder="Enter your full name">
+          <input type="number" class="inp" placeholder="Enter your Phone number">
+         <span id="mv"><p>Your mobile will be verified in next step</p></span>
+          <input type="email" class="inp" placeholder="Enter your Email ID (optional)">
           <div class="close">+</div>
-          <button id="btn">Continue</button>
-          <div class="loginvia"><span>Or login via</span></div>
-          <a class="fb" href="https://www.facebook.com/dialog/oauth?response_type=code&redirect_uri=https%3A%2F%2Fwww.dineout.co.in%2Fauth%2Ffacebook%2Fcallback&scope=email%2C%20public_profile&client_id=568956213159751"><img src="https://cdn.iconscout.com/icon/free/png-256/facebook-logo-2019-1597680-1350125.png" alt=""></a>
-          <a class="google" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.dineout.co.in%3Fid%3Dauth442310&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=953585151264-gum99n1btc31gl72h68ijup5hfjonjl1.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.dineout.co.in&prompt&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow"><img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt=""></a>
+          <button id="btn">Sign Up</button>
+         
       
     </div>
 </div>
