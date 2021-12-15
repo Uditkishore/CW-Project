@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            border: 1px solid red;
+            width: 100%;
+            height: 900px;
+        }
+        button{
+            background-color: brown;
+            color: white;
+            align-items: center;
+            margin-left: 50%;
+            margin-top: 25%;
+            font-size: 30px;
+        }
+        .bg-modal{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            top: 0;
+            display: none;
+        }
+        .modal-content{
+            width: 500px;
+            height: 300px;
+            background-color: white;
+            margin-top: 3%;
+            border-radius: 3%;
+            position: relative;
+
+        }
+        h2{
+            color: #FF645A;
+            font-family: Metropolis, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            margin-left: 7%;
+            margin-top: 7%;
+        }
+        #inp{
+            /* width: 90%;
+          border-bottom: 2px solid #ADADAD;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+            height: 5%;
+            */
+
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+    border: none;
+    overflow: visible;
+    outline: none;
+    padding: 1rem;
+    border-bottom: 1px solid #adadad;
+    padding-left: 0;
+    width: 85%;
+    margin-left: 7%;
+            
+        }
+        #btn{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    border-radius: 0;
+    user-select: none;
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+    outline: none;
+    border: none;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: .7rem;
+    background: #FF645A;
+    background-position: center;
+    transition: background 0.8s;
+    color: #fff;
+    width: 85%;
+    margin-left: 7%;
+    margin-top: 5%;
+        }
+        #btn:hover{
+            background-color: #fa3022;;
+        }
+        .loginvia{
+            font-family: Metropolis, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            margin-left: 41%;
+            margin-top: 3%;
+            margin-bottom: 2%;
+        }
+      .fb{
+          font-size: 200%;
+          margin-left: 41%;
+          margin-right: 2%;
+          color: #1299F6;
+          margin-bottom: 2%;
+           
+      }
+      img{
+          height: 30px;
+         
+      }
+      .close{
+          position: absolute;
+          top: 0;
+          right: 14px;
+          font-size: 42px;
+          transform: rotate(45deg);
+          cursor: pointer;
+      }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+<button id="btn1">Log In</button>
+<!--Model section-->
+<div class="bg-modal">
+    <div class="modal-content">
+      <h2>Log In / Sign Up</h2>
+    
+          <input type="email" id="inp" placeholder="Enter Mobile number or Email">
+          <div class="close">+</div>
+          <button id="btn">Continue</button>
+          <div class="loginvia"><span>Or login via</span></div>
+          <a class="fb" href="https://www.facebook.com/dialog/oauth?response_type=code&redirect_uri=https%3A%2F%2Fwww.dineout.co.in%2Fauth%2Ffacebook%2Fcallback&scope=email%2C%20public_profile&client_id=568956213159751"><img src="https://cdn.iconscout.com/icon/free/png-256/facebook-logo-2019-1597680-1350125.png" alt=""></a>
+          <a class="google" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.dineout.co.in%3Fid%3Dauth442310&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=953585151264-gum99n1btc31gl72h68ijup5hfjonjl1.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.dineout.co.in&prompt&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow"><img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt=""></a>
+      
+    </div>
+</div>
+</div>
+</body>
+</html>
+<script>
+    document.getElementById("btn1").addEventListener("click",function(){
+        document.querySelector(".bg-modal").style.display = "flex";
+    })
+    document.querySelector(".close").addEventListener("click", function(){
+        document.querySelector(".bg-modal").style.display = "none";
+    })
+
+</script>
+
+
+
