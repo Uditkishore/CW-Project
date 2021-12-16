@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #main{
+            
+            width: 25%;
+            height: 600px;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        h1{
+            font-family: Arial, sans-serif;
+            font-size: 28px;
+            padding-top: 5%;
+            padding-left: 5%;
+            
+        }
+        #signin{
+            background-color: rgb(242,204,110);
+            margin-top: 6%;
+            padding: 10px 35%;
+            margin-left: 6%;
+            border: transparent;
+            font-size: 20px;
+        }
+        .mobile{
+            padding: 8px 25%;
+            margin-left: 6%;
+        }
+        .name{
+            margin-left: 6%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+    <h1>Sign in </h1>
+    <h3 class="name">Email</h3>
+    <input type= "text" class="mobile" id="email">
+    <h3 class="name">Password</h3>
+    <input type= "text" id="password" class="mobile">
+    <input type="button" id="signin" value="Continue">
+</div>
+</body>
+</html>
+<script>
+    document.querySelector("#signin").addEventListener("click",signIN);
+    var regUser = JSON.parse(localStorage.getItem("userDatabase"));
+    function signIN(){
+    var email = document.querySelector("#email").value;
+    var password = document.querySelector("#password").value; 
+    if(email == "admin" && password == "admin"){
+        window.location.href = "admin.html";
+    } else{
+        for(var i = 0; i<regUser.length; i++){
+         if(regUser[i].Uemail == email && regUser[i].Upassword == password){
+             alert("Log in Sucessfull");
+             window.location.href = "prod.html";
+             break;
+         } else{
+             alert("Kindly check your email or password")
+             break;
+         }
+             
+         
+        }
+    }
+        
+    }
+    
+</script>

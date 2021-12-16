@@ -122,6 +122,7 @@
           font-size: 42px;
           transform: rotate(45deg);
           cursor: pointer;
+          color: #C1C1C1;
       }
       p{
           height: 0%;
@@ -130,6 +131,49 @@
           font-family: Metropolis, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
           font-size: 14px;
       }
+      .close:hover{
+        color: black;
+      }
+
+    .mail{
+        -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+    border: none;
+    overflow: visible;
+    outline: none;
+    padding: 1rem;
+    border-bottom: 1px solid #adadad;
+    padding-left: 0;
+    width: 85%;
+    margin-left: 7%;
+    }
+.phone{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+    border: none;
+    overflow: visible;
+    outline: none;
+    padding: 1rem;
+    border-bottom: 1px solid #adadad;
+    padding-left: 0;
+    width: 85%;
+    margin-left: 7%;
+}
         
     </style>
 </head>
@@ -142,9 +186,9 @@
       <h2>Sign Up</h2>
     
           <input type="text" class="inp" placeholder="Enter your full name">
-          <input type="number" class="inp" placeholder="Enter your Phone number">
+          <input type="number" class="phone" placeholder="Enter your Phone number">
          <span id="mv"><p>Your mobile will be verified in next step</p></span>
-          <input type="email" class="inp" placeholder="Enter your Email ID (optional)">
+          <input type="email" class="mail" placeholder="Enter your Email ID (optional)">
           <div class="close">+</div>
           <button id="btn">Sign Up</button>
          
@@ -161,7 +205,21 @@
     document.querySelector(".close").addEventListener("click", function(){
         document.querySelector(".bg-modal").style.display = "none";
     })
-
+   document.querySelector("#btn").addEventListener("click",signUp);
+   var userData = []
+   function signUp(){
+       var name = document.querySelector(".inp").value;
+       var number = document.querySelector(".phone").value;
+       var email = document.querySelector(".mail").value;
+       var userCred = {
+        uname:name,
+        unumber:number,
+        uemail:email   
+       };
+       userData.push(userCred);
+       localStorage.setItem("userdatabase",JSON.stringify(userData));
+    //    window.location.href = ""
+   }
 </script>
 
 

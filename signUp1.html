@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account sign up</title>
+    <style>
+        img{
+            height: 70px;
+            margin-left: 46%;
+        }
+        h1{
+            font-family: Arial, sans-serif;
+            font-size: 28px;
+            padding-top: 5%;
+            padding-left: 5%;
+            
+        }
+        #main{
+            
+            width: 25%;
+            height: 600px;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .name{
+            margin-left: 6%;
+        }
+        #name{
+            padding: 8px 25%;
+            margin-left: 6%;
+        }
+        .mobile{
+            padding: 8px 25%;
+            margin-left: 6%;
+        }
+        #signup{
+            background-color: rgb(242,204,110);
+            margin-top: 6%;
+            padding: 10px 35%;
+            margin-left: 6%;
+            border: transparent;
+            font-size: 20px;
+        }
+        p{
+           margin: 10%;
+        }
+    </style>
+</head>
+<body>
+   
+    <img src="https://sm.pcmag.com/pcmag_in/photo/default/amazon-logo-7591_tk9t.jpg" alt="">
+    <div id="main">
+    <form id="myForm">
+    <h1>Create Account</h1>
+    <h3 class="name">Your Name</h3>
+    <input type="text" id="name">
+    <h3 class="name">Mobile Number</h3>
+    <input type= "text" id="mobile" class="mobile" >
+    <h3 class="name">Email</h3>
+    <input type= "text" class="mobile" id="email">
+    <h3 class="name">Password</h3>
+    <input type= "text" id="password" class="mobile">
+    <input type="button" id="signup" value="Continue">
+    </form>
+    <p>Already have an account? <a href="signin.html">Sign In</a></p> 
+</div>
+</body>
+</html>
+<script>
+    document.querySelector("#signup").addEventListener("click", signup)
+    var userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
+function signup(){
+    var name = document.querySelector("#name").value;
+    var mobile = document.querySelector("#mobile").value;
+    var email = document.querySelector("#email").value;
+    var password = document.querySelector("#password").value;
+    var upserCred = {
+        Uname:name,
+        Umobile:mobile,
+        Uemail:email,
+        Upassword:password
+    };
+    userData.push(upserCred)
+  localStorage.setItem("userDatabase", JSON.stringify(userData));
+  
+  alert("You are registred proceed to sign in")
+  window.location.href = "signin.html";
+  
+}
+</script>

@@ -122,6 +122,10 @@
           font-size: 42px;
           transform: rotate(45deg);
           cursor: pointer;
+          color: #C1C1C1;
+      }
+      .close:hover{
+        color: black;
       }
         
     </style>
@@ -153,6 +157,13 @@
     document.querySelector(".close").addEventListener("click", function(){
         document.querySelector(".bg-modal").style.display = "none";
     })
+    document.querySelector("#btn").addEventListener("click",logIN)
+    var registeruser = JSON.parse(localStorage.getItem("userdatabase"))
+    function logIn(){
+        var email = document.querySelector("#inp").value;
+
+    }
+
 
 </script>
 
