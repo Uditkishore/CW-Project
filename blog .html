@@ -8,7 +8,6 @@
     <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
     <style>
         .container{
-          
             height: 140px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
@@ -60,6 +59,7 @@
             grid-template-columns: repeat(4,1fr);
             grid-gap: 15px;
             background-color: #E7E7E7;
+           
           
             width: 98%;
             margin-left: 1%;
@@ -72,21 +72,25 @@
         img{
             height: 192px;
         }
-        .content >div >img{
+        /* .content >div >img{
             background-size: 100%;
             background-position: center;
         }
         .content >div >img:hover{
             background-size: 150%;
-            background-position: center;
-
-
-        }
-        img:hover{
+            background-position zoom: ;
+        } */
+        /* img:hover{
             background-size: 150%;  
-        }
+        } */
+
+        @media only screen and (min-width: 0px max-width:376px) {
+  .content div{
+    display: none;
+  }
+}
         .bottom2{
-            border: 1px solid red;
+            
             height: 1800px;
             width: 100%;
            
@@ -103,7 +107,7 @@
      }
      .bottomcontent{
          width: 45%;
-         border: 1px solid red;
+        
          margin-left: 20%;
      }
      .section{
@@ -155,12 +159,23 @@
          width: 100%;
          /* border: 1px solid red; */
          display: flex;
+         
      }
      .right2{
             /* border: 1px solid red; */
             /* height: 100%; */
             width: 10%;
             margin-left: 65%;
+        }
+        .bcontent{
+            margin-left: 2%;
+        }
+        .effect:hover{
+            color: #FF6497;
+            border-top: brown;
+        }
+        .bottom:hover{
+            border-top: brown;
         }
    
     </style>
@@ -177,64 +192,80 @@
        
     </div>
     <div class="bottom">
-   <a href="#"><h4>Dineout Passport</h4></a>
+   <a href=""><h4 class="effect">Dineout Passport</h4></a>
     <hr>
-    <a href=""><h4>Corporate Updates</h4></a>
+    <a href=""><h4 class="effect">Corporate Updates</h4></a>
     <hr>
-    <a href=""><h4>Dineout Cities</h4></a>
+    <a href=""><h4 class="effect">Dineout Cities</h4></a>
     <hr>
-    <a href=""><h4>Top Homechefs</h4></a>
+    <a href=""><h4 class="effect">Top Homechefs</h4></a>
     </div>
 </div>
 
 <div class="content">
-<div class="box1"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-21-705x268.png" alt="">
-<h3>Looking For Some Amazing Food And Happening Gigs Around Town? Visit Mic Drop</h3>
-<div id="bcontent"><h4>Offer: Flat 25% off the total bill</h4>
+
+    <div class="box1"><a href="https://www.dineout.co.in/blog/looking-for-some-amazing-food-and-happening-gigs-around-town-visit-mic-drop/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-21-705x268.png" alt=""></a>
+        <div class="bcontent">
+        <h3>Looking For Some Amazing Food And Happening Gigs Around Town? Visit Mic Drop</h3>
+<h4>Offer: Flat 25% off the total bill</h4>
 <h4>A perfect combination of</h4>
 <p>14th December 2021</p>
 </div>
 </div>
-<div class="box2"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Blog-9-705x268.jpg" alt="">
+<div class="box2"><a href="https://www.dineout.co.in/blog/harry-potter-quiz-bake-a-cake-well-tell-which-hogwarts-house-you-belong-to/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Blog-9-705x268.jpg" alt="">
+</a>
+    <div class="bcontent">
     <h3>Harry Potter Quiz: Bake a Cake & We’ll Tell Which Hogwarts House you Belong to!</h3>
-    <div id="bcontent"><h4>Offer: Flat 25% off the total bill</h4>
+    <h4>Offer: Flat 25% off the total bill</h4>
         <h4>Fan of desserts and Harry Potter? Well,well,well, you're...</h4>
 
         <p>12th December</p>
         </div>
 </div>
 <div class="box3">
-    <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/WhatsApp-Image-2021-11-19-at-14.41.18-705x268.jpeg" alt="">
+   <a href="https://www.dineout.co.in/blog/a-dreamy-candlelight-dinner-at-barish-moonbar-brewery-is-sure-to-make-you-feel-some-love-in-the-air/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/WhatsApp-Image-2021-11-19-at-14.41.18-705x268.jpeg" alt=""></a> 
+    <div class="bcontent">
     <h3>A Dreamy Candlelight Dinner at Barish Moonbar & Brewery Is Sure To Make You Feel Some Love in The Air!</h3>
     <h4>Offer: Flat 25% off the total bill</h4>
-    <br>
+   
     <h4>Perfect place to Have...</h4>
     <p>19th December 2021</p>
+    </div>
 </div>
 <div class="box4">
-    <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-20-705x268.png" alt="">
+   <a href="https://www.dineout.co.in/blog/searching-for-a-perfect-place-to-relish-authentic-south-indian-delicacies-head-out-to-dasaprakash/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-20-705x268.png" alt=""></a> 
+    <div class="bcontent">
     <h3>Searching For A Perfect Place to Relish Authentic South Indian Delicacies? Head Out To Dasaprakash!</h3>
     <h4>Offer: Flat 15% off the total bill</h4>
     <h4>Aunthentic to the core</h4>
     <h4>Founded...</h4>
     <p>9th December 2021</p>
 </div>
+</div>
 
 <div class="box5">
-    <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-705x268.png" alt="">
+    <a href="https://www.dineout.co.in/blog/dineout-passport-experiences-jazz-malt-at-the-club-lounge-sheraton-hyderabad/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-705x268.png" alt=""></a>
+    <div class="bcontent">
     <h3>Dineout Passport Experiences: Jazz & Malt at The Club Lounge, Sheraton Hyderabad</h3>
     <h4>An evening to remember, an evening to cherish. When great brands…</h4>
     <p>3rd December 2021</p>
+    </div>
 </div>
-<div class="box6"> <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-19-705x268.png" alt="">
-<h3>Spectacular To The Power Infinity: Bookmark This Restro-Bar For A Unique Gastronomical Experience!</h3>
-<h3>Offer: Flat 25% off the Total Bill</h3><br>
+<div class="box6">
+    <a href="https://www.dineout.co.in/blog/spectacular-to-the-power-infinity-bookmark-this-restro-bar-for-a-unique-gastronomical-experience/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-19-705x268.png" alt="">
+    </a> 
+    <div class="bcontent">
+    <h3>Spectacular To The Power Infinity: Bookmark This Restro-Bar For A Unique Gastronomical Experience!</h3>
+<h3>Offer: Flat 25% off the Total Bill</h3>
 <h4>
     Punjabi Bagh’s stellar…</h4>
     <p>8th December 2021</p>
+    </div>
 </div>
 <div class="box7">
-    <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-16-705x268.png" alt="">
+  <a href="https://www.dineout.co.in/blog/the-flavours-of-christmas-awaits-you-at-7-old-town-check-it-out/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-16-705x268.png" alt="">
+  </a>  
+    <div class="bcontent">
     <h3>The Flavours of Christmas Awaits You At 7 Old Town! Check it Out!</h3>
     <h3>Offer: Flat 20% off the Total Bill</h3>
     <div class="av-masonry-entry-content entry-content" itemprop="text">Offer – 20% off the Total Bill<br>
@@ -243,17 +274,21 @@
         <br>
         Place…</div>
         <span>2nd December 2021</span>
+    </div>
 </div>
 <div class="box8">
-    <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-15-705x268.png" alt="">
+   <a href="https://www.dineout.co.in/blog/step-out-with-dineout-to-explore-the-coolest-events-around-you-with-its-newest-feature/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-15-705x268.png" alt="">
+   </a> 
+    <div class="bcontent">
     <h3>Listen Up Mates! All Your Parties Are Now MOM Approved!</h3>
-    <div class="av-masonry-entry-content entry-content" itemprop="text">No, not your mom, Duh! She would never approve of anything that…</div>
+    <div itemprop="text">No, not your mom, Duh! She would never approve of anything that…</div>
     <p>1st December 2021</p>
+    </div>
 </div>
 </div>
 <div class="bottom2">
     <div class="bottomcontent">
-<a href=""><img class="bimg" src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/71279543_1224356884417432_5666944107071668224_n-2-1.jpg" alt=""></a>
+<a href="https://www.dineout.co.in/blog/top-10-brands-at-the-christmas-wonderland-at-dlf-avenue/"><img class="bimg" src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/71279543_1224356884417432_5666944107071668224_n-2-1.jpg" alt=""></a>
 <h2 class="h2con" itemprop="headline">	<a href="https://www.dineout.co.in/blog/top-10-brands-at-the-christmas-wonderland-at-dlf-avenue/" rel="bookmark" title="Permanent Link: Top 10 Brands At The Christmas Wonderland at DLF Avenue">Top 10 Brands At The Christmas Wonderland at DLF Avenue			<span class="post-format-icon minor-meta"></span>	</a></h2>
 <span class="h2con" ><time class="date-container minor-meta updated">1st December 2021</time><span class="text-sep text-sep-date">/</span><span class="comment-container minor-meta"><a href="https://www.dineout.co.in/blog/top-10-brands-at-the-christmas-wonderland-at-dlf-avenue/#respond" class="comments-link"</a></span><span class="text-sep text-sep-comment">/</span><span class="blog-categories minor-meta"><span class="text-sep text-sep-cat">/</span><span class="blog-author minor-meta">by <span class="entry-author-link"><span class="vcard author"><span class="fn"><a href="https://www.dineout.co.in/blog/author/nandini-poddar/" title="Posts by Nandini Poddar" rel="author">Nandini Poddar</a></span></span></span></span></span>
 <p class="h2con">Top 10 brands to check out at the Night Market ‑ Christmas Wonderland on the 4th &amp; 5th of December at DLF Avenue, Saket. 1. The Kefi Co. 2. The Bare Bar 3. Studio Auora 4. House of Finery 5. House of Kastoor 6. Florida 7. Cackle With Love 8. Creative Weirdo 9. The Blue […]<!-- AddThis Advanced Settings above via filter on get_the_excerpt --><!-- AddThis Advanced Settings below via filter on get_the_excerpt --><!-- AddThis Advanced Settings generic via filter on get_the_excerpt --><!-- AddThis Share Buttons above via filter on get_the_excerpt --><!-- AddThis Share Buttons below via filter on get_the_excerpt --></p>
@@ -262,7 +297,7 @@
 
 </div>
 <div class="bottomcontent">
-    <a href=""><img class="bimg" src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/Untitled-design-14.png" alt=""></a>
+    <a href="https://www.dineout.co.in/blog/get-ready-folks-my-bar-headquarters-is-here-to-cross-out-all-your-bar-lists/"><img class="bimg" src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/Untitled-design-14.png" alt=""></a>
     <h2 class="h2con"><a href="https://www.dineout.co.in/blog/get-ready-folks-my-bar-headquarters-is-here-to-cross-out-all-your-bar-lists/" rel="bookmark" title="Permanent Link: Get Ready Folks! My Bar Headquarters Is Here to Cross Out All Your Bar Lists!">Get Ready Folks! My Bar Headquarters Is Here to Cross Out All Your Bar Lists!			<span class="post-format-icon minor-meta"></span>	</a></h2>
     
     <p><span class="h2con" ><time class="date-container minor-meta updated">1st December 2021</time><span class="text-sep text-sep-date">/</span><span class="comment-container minor-meta"><a href="https://www.dineout.co.in/blog/top-10-brands-at-the-christmas-wonderland-at-dlf-avenue/#respond" class="comments-link"</a></span><span class="text-sep text-sep-comment">/</span><span class="blog-categories minor-meta"><span class="text-sep text-sep-cat">/</span><span class="blog-author minor-meta">by <span class="entry-author-link"><span class="vcard author"><span class="fn"><a href="https://www.dineout.co.in/blog/author/nandini-poddar/" title="Posts by Nandini Poddar" rel="author">Nandini Poddar</a></span></span></span></span></span></p>
@@ -270,7 +305,7 @@
     <a href="https://www.dineout.co.in/blog/top-10-brands-at-the-christmas-wonderland-at-dlf-avenue/" class="more-link">Read more<span class="more-link-arrow"></span></a>
 </div>
 <div class="bottomcontent">
-    <a href=""><img class="bimg" src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/Untitled-design-13.png" alt=""></a>
+    <a href="https://www.dineout.co.in/blog/refreshing-mojitos-mouth-watering-food-and-a-killer-vibe-here-goes-the-clue/"><img class="bimg" src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/Untitled-design-13.png" alt=""></a>
     <h2 class="h2con">
         <a href="https://www.dineout.co.in/blog/refreshing-mojitos-mouth-watering-food-and-a-killer-vibe-here-goes-the-clue/" rel="bookmark" title="Permanent Link: Refreshing Mojitos, Mouth Watering Food, And A Killer Vibe, Here Goes The Clue!">Refreshing Mojitos, Mouth Watering Food, And A Killer Vibe, Here Goes The Clue!<span class="post-format-icon minor-meta"></span>	</a>
     </h2>
