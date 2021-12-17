@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #head{
+         margin-left: 100px;  
+         display: flex;
+         justify-content:space-between
+        }
+
+        #head>div>img{
+            height: 50px;
+            
+
+        }
+
+        #btn>button{
+            background-color: white;
+            font-size: 20px;
+            border: 0px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+           
+        }
+
+
+
+        
+
+.header {
+
+ 
+  margin-left:1400px
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width:80px
+  
+}
+
+
+        
+        
+
+        #cont{
+        height: 600px;
+        
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: 300px  ;
+        }
+
+        #cont>div{
+         
+           
+           
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0;
+            padding: 5px
+        }
+
+        #cont>div>img{
+            width: 370px;
+        }
+
+        #cont2{
+         height: 4700px;
+        border: 1px solid rgb(110, 107, 107);
+          display: flex;
+          margin-top: 50px;
+        }
+
+        #cont2>#leftbox{
+            width: 1000px;
+            border: 1px solid rgb(110, 107, 107);
+            height: 4700px;
+            margin-right: 20px;
+        }
+
+        #cont2>#rightbox{
+          width: 600px;
+          height: 4700px;
+          border: 1px solid rgb(110, 107, 107);
+        }
+
+        #cont2>#leftbox>#box1{
+            width: 700px;
+            height: 460px;
+            border:  1px solid rgb(110, 107, 107);
+            margin-left: 200px;
+        }
+
+
+         #cont2>#leftbox>#box1>img{
+           width: 700px;
+           height: 250px;
+
+         }
+
+        
+         #cont2>#leftbox>#box1>button{
+          margin-left: 300px;
+          background-color: white;
+          color: black;
+          border: 0px;
+
+         }
+
+         #cont2>#rightbox>#rightbox1{
+             margin-left: 80px;
+         }
+
+         #cont2>#rightbox>#rightbox2>p{
+             margin-left: 80px;
+         }
+
+         #cont2>#rightbox>#rightbox0>#rightbox2head{
+            margin-left: 80px;
+           
+         }
+
+         #cont2>#rightbox>#rightbox2>#rightbox2img{
+             height: 40px;
+            
+            display: flex;
+            margin-left: 80px;
+           
+         }
+
+         #cont2>#rightbox>#rightbox2>#video{
+             width: 320px;
+             height: 350px;
+             margin-left: 80px;
+         }
+
+         #cont2>#rightbox>#rightbox2{
+             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+             padding: 20px;
+         }
+
+         #cont2>#rightbox>#rightbox2>img{
+             height: 320px;
+             height: 350px;
+             margin-left: 80px;
+             
+
+         }
+
+         #footer{
+             width: 100%;
+             height: 300px;
+             background-color: rgb(85, 81, 81);
+             color: white;
+           
+            
+            
+         }
+
+       #footer>#footerhead>h1{
+         margin-left: 150px;
+       
+        
+       
+        
+       }
+
+       #footer>#para1{
+           font-size: 15px;
+           display: flex;
+            margin-left: 150px;
+            margin-top: 30px;
+           
+          
+       }
+
+         #footer>#para1>p{
+          
+            margin-right: 30px;
+          
+       }
+
+        
+    </style>
+</head>
+
+<body>
+  <div id="head">
+      <div>
+           <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2019/07/168.png" alt="">
+      </div>
+      <div>
+           <img src="https://www.womensurgeons.org/resource/resmgr/images/econnections/social2.jpg" alt="">
+      </div>
+    
+   </div>
+   <hr>
+
+   <div id="btn">
+       <button onclick="dineout()">Dineout Passport</button>
+        <button>Corporate Update</button>
+     <button>Dineout Cities</button>
+      <button>Top Homechefs</button>
+     
+   </div>
+
+
+   
+<div class="header" id="myHeader">
+  <img
+  width="35px"
+  height="80px"
+   src="https://www.pngkit.com/png/detail/97-979298_social-media-icons-twitter-facebook-instagram-vertical-social.png" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div id="cont">
+       <div>
+        <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/15-dec-BB-705x268.jpg">
+        <h3>Step Out with Dineout to Explore the Coolest Events Around you with its Newest Feature</h3>
+        <p>Spending the kast two years at home was surely an eye-opener for.....</p>
+        16th December 2021
+       </div>
+       <div>
+           <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-21-705x268.png" alt="">
+           <h3>Looking For Some Amazing Food And Happening Gigs Around Town? Visit Mic Drop</h3>
+           <p>Offer: Flat 25% off the total bill</p>
+           14th December 2021
+       </div>
+       <div>
+           <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Blog-9-705x268.jpg"
+            alt="">
+            <h3>Harry Potter Quiz: Bake a Cake & We’ll Tell Which Hogwarts House you Belong to!</h3>
+            <p>Fan of desserts and Harry Potter? Well, well, well, you’re</p>
+            12th December 2021
+       </div>
+       <div>
+           <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/WhatsApp-Image-2021-11-19-at-14.41.18-705x268.jpeg"
+            alt="">
+            <h3>A Dreamy Candlelight Dinner at Barish Moonbar & Brewery Is Sure To Make You Feel Some Love in The Air!</h3>
+            Offer: Flat 25% off the Total Bill<br>
+            Perfect place to: Have a romantic date<br>
+            14 december 2021
+       </div>
+       <div>
+           <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-20-705x268.png" alt="">
+           <p>Searching For A Perfect Place to Relish Authentic South Indian Delicacies? Head Out To Dasaprakash!</p>
+           Offer: Flat 15% off the Total Bill<br>
+           Authentic to the Core<br>
+           founded..<br>
+           <p>9th December 2021</p>
+           
+       </div>
+       <div>
+           <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/26-Nov-BB.jpg" alt="">
+           <h3>Dineout Passport Experiences: Malt & Jazz at Sheraton, Hyderabad
+Dineout Passport Experiences: Jazz & Malt at The Club Lounge, Sheraton Hyderabad</h3>
+An evening to remember..<br>
+  3rd December
+       </div>
+       <div>
+           <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-19-705x268.png" alt="">
+           <h3>Spectacular To The Power Infinity: Bookmark This Restro-Bar For A Unique Gastronomical Experience!</h3>
+           Offer: Flat 25% off the Total Bill
+           <p> 8 December 2021</p>
+          
+       </div>
+       <div>
+           <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-16-705x268.png" alt="">
+           <h3>The Flavours of Christmas Awaits You At 7 Old Town! Check it Out!</h3>
+           Offer 20% off the Total Bill<br>
+          Cost for two Rs 1700Place perfect for chilling with friend<br>
+          4th December
+       </div>
+   </div>
+
+
+   <div id="cont2">
+       <div id="leftbox">
+           <div id="box1">
+       <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-15.png" alt="">
+          <h3>Listen Up Mates! All Your Parties Are Now MOM Approved!</h3>
+        <p>1st December 2021/by Mohana Chakraborty</p>  
+        <p> No, not your mom, Duh! She would never approve of anything that remotely sounds like a party. We are talking about the Master of Malts, the one gem in Connaught Place that beats in the heart of all alcohol connoisseurs. The Rustic Vibe Spread over two floors, it’s done up in all wood and isn’t […]</p>
+        <button>Read more</button>
+    </div>
+
+
+         <div id="box1">
+       <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/71279543_1224356884417432_5666944107071668224_n-2-1.jpg" alt="">
+          <h3>Top 10 Brands At The Christmas Wonderland at DLF Avenue</h3>
+        <p>1st December 2021/by Nandini Poddar</p>  
+        <p>Top 10 brands to check out at the Night Market ‑ Christmas Wonderland on the 4th & 5th of December at DLF Avenue, Saket. 1. The Kefi Co. 2. The Bare Bar 3. Studio Auora 4. House of Finery 5. House of Kastoor 6. Florida 7. Cackle With Love 8. Creative Weirdo 9. The Blue […]</p>
+         <button>Read more</button>
+        </div>
+
+
+         <div id="box1">
+       <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/Untitled-design-14.png" alt="">
+          <h3>Get Ready Folks! My Bar Headquarters Is Here to Cross Out All Your Bar Lists!</h3>
+        <p>30th November 2021/by Mohana Chakraborty</p>  
+        <p>Oh the Vibe! A Chic nightspot with brick walls & an industrial vibe, My Bar Headquarters is a spacious bar with rustic decor and soulful live music. With all-wooden furniture, brown interiors and ample seating space, this place is a star for being a budget-friendly option when you need to head out for drinks with […]</p>
+         <button>Read more</button>
+        </div>
+
+
+          <div id="box1">
+       <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/Untitled-design-13.png" alt="">
+          <h3>Refreshing Mojitos, Mouth Watering Food, And A Killer Vibe, Here Goes The Clue!</h3>
+        <p>30th November 2021/by Mohana Chakraborty</p>  
+        <p>Offer: flat 30% off the total bill Go Colours! Touted for its vibrant ambience and a refreshing vibe, Clue is here to make you all go gaga about the tempting cuisine, rocking ambience, and a unique blend of drinks & beers which will get you overwhelmed. Featuring a trendy terrace featuring international cuisine, craft cocktails […]</p>
+         <button>Read more</button>
+        </div>
+
+
+           <div id="box1">
+       <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-18-at-4.47.06-PM-1.jpeg" alt="">
+          <h3>Here’s The Ingenious Way To Find Some Peace Amid The Bustle at Café After Hours</h3>
+        <p>30th November 2021/by Mohana Chakraborty</p>  
+        <p>Me time” doesn’t necessarily have to be a whole day at the spa, or a whole day of activity. In fact, just a few minutes squeezed into the middle of the day works if that’s all you have.
+
+<p2>Here’s the Way</p2>
+
+Take some time to find some peace at Café After Hours. Nestled in Paschim Vihar. This place is as breezy as it sounds. With snazzy décor and chill vibe, Café After Hours is a great place to chill with or without  friends.</p>
+         <button>Read more</button>
+        </div>
+
+
+         <div id="box1">
+       <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/26-Nov-BB.jpg" alt="">
+          <h3>
+         Winters Special: Where to Find the Best Hot Chocolate in Delhi?</h3>
+        <p>30th November 2021/by Shivangi Goel</p>  
+        <p>Teas and coffee are okay but have you ever had a cuppa of hot chocolate on a lazy winter evening? Well, if just a mention of hot chocolate made you excited, this post will give you some major FOMO for all the right reasons.  After all, the warm and fuzzy hot chocolate is everyone’s fix […]</p>
+         <button>Read more</button>
+        </div>
+
+
+
+        <div id="box1">
+       <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/Untitled-design-14.jpg" alt="">
+          <h3>
+        Dineout Passport Experiences: The Degh Story at Novotel Chennai Chamiers Road</h3>
+        <p>29th November 2021/by Dineout Passport</p>  
+        <p>Novotel Chennai Chamiers Road’s recently announced its cloud kitchen – The Degh Story. The event took place in the afternoon, with guests from all walks of life and our Brand Host Ameeta Agnihotri.   The exclusive event had a full table of 11 invitees and was a riot as all the guests got along, exchanged […]</p>
+         <button>Read more</button>
+        </div>
+
+
+        <div id="box1">
+       <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/Untitled-design.png" alt="">
+          <h3>
+       Dineout Passport Experience: Enjoying the Gastronomic Experience at The Park</h3>
+        <p>28th November 2021/by Dineout Passport</p>  
+        <p>We had an amazing Dineout Passport experience in the city of joy, Kolkata with the newest chef Balpreet Singh at Zen at The Park, in The Park Kolkata. A wonderful set of people attending the event and an exclusive menu curated by Mr Balpreet Singh made it an afternoon to remember. The food was (as expected) spectacular and our […]</p>
+         <button>Read more</button>
+        </div>
+
+
+
+         <div id="box1">
+       <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/Untitled-design-10-1.png" alt="">
+          <h3>
+      Dineout Passport Experiences: The ultimate Food Fest at Holiday Inn Zirakpur</h3>
+        <p>25th November 2021/by Dineout Passport</p>  
+        <p>The event hosted by Dineout Passport Brand Host – Neha Mahajan, welcomed the festive season with the Food Fest #BandBaajaBaaraat. It was an amalgam of dishes served during marriages across India. The venue was decorated with food stalls, mehndi artists & live music to replicate the setup of that of a real marriage. With the […]</p>
+         <button>Read more</button>
+        </div>
+
+
+
+            <div id="box1">
+       <img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/Untitled-design-12.png" alt="">
+          <h3>
+     The Season Calls For Some Chocolates And Cheesecakes At Theos!</h3>
+        <p>23rd November 2021/by Mohana Chakraborty</p>  
+        <p>Cost for 2- Rs 2200 Offer- Flat 15% off on food & soft beverages Place best for- First dates and Catch ups   The Delicious Affair Offering baked goods and brownies that melt in your mouth(we kid you not!) Theos as a brand has been known & awarded for its finest state-of-the-art french patisserie and […]</p>
+         <button>Read more</button>
+        </div>
+
+   </div>
+
+
+        
+     
+       <div id="rightbox">
+           <div id="rightbox1">
+           <h3>FRESH OUT OF THE OVEN</h3>
+           <p>Step Out with Dineout to Explore the Coolest Events<br> Around you with its Newest Feature 16th December<br> 2021</p>
+           <p>The Season Calls For A Romantic Date Filled With<br> Laughter & Joy At Groot 14th December 2021</p>
+           <p>Friendly, Trendy, & Chic: Welcome To The New<br> Creative Gourmet Experience At Thyme & Whisk 14th<br> December 2021</p>
+          <p>When In Bangalore Drop By This Picturesque Little<br>Place And It Was Called Yellow 14th December 2021</p>
+          <p>Looking For Some Amazing Food And Happening<br> Gigs Around Town? Visit Mic Drop 14th December<br>2021</p>
+        </div>
+        <hr>
+
+
+        <div id="rightbox0">
+            <div id="rightbox2head">
+                <h3>TWITTER</h3>
+            <h3>Tweets <sub>by @dineout_india</sub> </h3>
+            </div>
+        </div> 
+            <hr>
+
+
+         <div id="rightbox2">
+             <div id="rightbox2img">
+                   <img src="https://scontent.fixr3-2.fna.fbcdn.net/v/t1.6435-1/cp0/c6.6.74.74a/p86x86/106486205_3243622482397002_4685302443740701484_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=dbb9e7&_nc_ohc=5OnHZZ91hlMAX8OQar5&_nc_ht=scontent.fixr3-2.fna&edm=AItmks8EAAAA&oh=00_AT9OHn9DfSS6V2-wsO58INOG65cqy1tLj--62OtzH0zfVg&oe=61E1FE83" alt="">  
+                  Dineout<br>
+                  @dineout_india
+             </div>
+             <p>Now step out with Dineout and explore the coolest<br> events near you! 🙌🏼 #DineoutParDekho </p>
+             
+             <iframe id="video"   src="https://www.youtube.com/embed/tgbNymZ7vqY">
+             </iframe>
+           </div>   
+
+
+
+            <div id="rightbox2">
+             <div id="rightbox2img">
+                   <img src="https://scontent.fixr3-2.fna.fbcdn.net/v/t1.6435-1/cp0/c6.6.74.74a/p86x86/106486205_3243622482397002_4685302443740701484_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=dbb9e7&_nc_ohc=5OnHZZ91hlMAX8OQar5&_nc_ht=scontent.fixr3-2.fna&edm=AItmks8EAAAA&oh=00_AT9OHn9DfSS6V2-wsO58INOG65cqy1tLj--62OtzH0zfVg&oe=61E1FE83" alt="">  
+                  Dineout<br>
+                  @dineout_india
+             </div>
+             <p>Wondering what the tea is? 🫖 Stay tuned to find out! <br>☕️ #BigAnnouncement #ComingSoon</p>
+             
+            <img src="https://pbs.twimg.com/media/FGktcO3UUAILU0y?format=jpg&name=small" alt="">
+           </div> 
+
+
+
+            <div id="rightbox2">
+             <div id="rightbox2img">
+                   <img src="https://scontent.fixr3-2.fna.fbcdn.net/v/t1.6435-1/cp0/c6.6.74.74a/p86x86/106486205_3243622482397002_4685302443740701484_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=dbb9e7&_nc_ohc=5OnHZZ91hlMAX8OQar5&_nc_ht=scontent.fixr3-2.fna&edm=AItmks8EAAAA&oh=00_AT9OHn9DfSS6V2-wsO58INOG65cqy1tLj--62OtzH0zfVg&oe=61E1FE83" alt="">  
+                  Dineout<br>
+                  @dineout_india
+             </div>
+             <p>Our hearts (and stomachs) are full. <br>💗#HarnaazSandhu #MissUniverse2021 #MissUniverse<br> #70thMissUniverse</p>
+             
+            <img src="https://pbs.twimg.com/media/FGeCbYIVkAEtrK6?format=jpg&name=small" alt="">
+           </div> 
+
+        </div> 
+   </div>
+
+    
+  
+  <div id="footer">
+      <div id="footerhead">
+          <h1>Tags</h1>
+      </div>
+      
+
+      <div id="para1">
+        <p>#ahmedabadfoodies</p>
+        <p>#bangalorefoodies</p>
+        <p>#bar</p>
+        <p>#breweries</p>
+        <p>#delhifoodies</p>
+        <p>#finedining</p>
+        <p>foodies</p>
+        <p>Banglorebeer cafe</p>
+        <p>clublifechandigarh</p>
+        <p>kolkatafoodies</p>
+        <p>#foodlover</p>
+        </div>
+
+
+
+        <div id="para1">
+        <p>#hyderbad</p>
+        <p>#Luxurydining</p>
+        <p>#mumbaifoodies</p>
+        <p>#northindian</p>
+        <p>##northindian</p>
+        <p>#puneBuffet</p>
+        <p>#Chandigarh</p>
+        <p>#Banglorebeer cafe</p>
+        <p>#clublifechandigarh</p>
+        <p>#kolkatafoodies</p>
+        <p>#cricket</p>
+        </div>
+
+
+
+
+        <div id="para1">
+        <p>#foodinkolkata</p>
+        <p>#Hyderabad</p>
+        <p>#ipl</p>
+         <p>#cricketlover</p>
+        <p>#delhifoodies</p>
+        <p>#mumbaifoods</p>
+        <p>foodies</p>
+        <p>Banglorebeer cafe</p>
+        <p>clublifechandigarh</p>
+        <p>kolkatafoodies</p>
+        <p>#foodlover</p>
+        </div>
+     
+     
+  </div>
+     
+
+
+   
+  
+</body>
+</html>
+<script>
+    function dineout(){
+        window.location.href="dinepassport.html"
+    }
+
+
+
+
+
+    window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
