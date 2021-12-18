@@ -1,0 +1,225 @@
+.aaaa{
+width:100%;
+align-items: center;
+background-color: #f4f4f4;
+display: flex;
+flex-direction: row-reverse;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            
+}
+.aaab{
+    width:50%;
+    margin:auto;
+    background-color: #f4f4f4;
+    margin-left:20%;
+    margin-top: 20px;
+
+}
+.aaab>div{
+    border-radius: 10px;
+}
+#bold{
+    display: flex;
+    width:100%;
+    font-size:20px;
+    justify-content: space-evenly;
+    background-color: white;
+    height:30px;
+    font:25px;
+    justify-items: center;
+    height:40px;
+
+    padding-top:10px;
+}
+#bold>b{
+    margin-left: 10px;
+    }
+    #bold:hover{
+        background-color:cornflowerblue;
+    }
+#bold>b:hover{
+    color: rgb(42, 190, 42);
+    border-bottom: darkgreen solid 5px ;
+    
+}
+#float{
+    display:flex;
+    margin-top:30px;
+    justify-content: space-between;
+    padding:0px 4%;
+    font-size:25px;
+}
+#float:hover{
+    background-color: gray;
+}
+#float>img{
+    float: left;
+    height:68px;
+    width:198px;
+    margin-top:20px;
+    margin-right:20px;
+}
+#menu{
+    margin-top: 20px;
+    font-size:20px;
+    padding:5px 0px 20px 20px;
+    margin-bottom: 20px;
+}
+#menu:hover{
+background-color: teal;
+}
+#menu>div>img{
+height: 133px;
+width:125px;
+}
+#two{
+    display: flex;
+}
+#carry>h4{
+    font-size:30px;
+    padding:10px 0px 0px 20px;
+    margin-bottom:0px;
+    
+}
+#carry>p{
+    font-size:20px;
+    padding:10px 0px 0px 20px
+}
+#carry:hover{
+ background-color:khaki
+}
+#two>div:hover{
+    background-color: crimson;
+}
+#two>div{
+    width:1fr;
+    padding:20px 10px
+}
+#two img{
+    width:100%;
+    height:100%
+}
+#onetwo{
+    width:100%
+}
+#onetwo>div>h4{
+    font-size:25px;
+}
+#onetwo>div>p{
+    font-size:20px;
+    margin-left: 20px;
+}
+#oneone{
+    height:240px
+}
+#miss{
+    display: flex;
+    justify-content: space-between;
+    padding:5px 7%;
+    margin-top: 30px;
+    margin-bottom:50px;
+    border-bottom:20px solid #f4f4f4;
+}
+#miss>h4{
+    font-size:30px;
+}
+#miss>button{
+    width:200px;
+    height:50px;
+    border-radius:9px;
+    font-size:15px;
+    margin-top:3%;
+}
+#miss:hover{
+    background-color: lightcyan;
+}
+#miss>button:hover{
+    background-color:blue;
+}
+.aaab>div{
+    background-color: white;
+}
+#a1{
+width:100%;
+height:530px;
+background-color: lime;
+}
+.image:hover{
+    border:5px solid blue
+}
+#a2{
+    width:100%;
+    height:200px;
+    background-color: linen;
+    padding-bottom:35px;
+    padding-top:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+#a2:hover{
+background-color: palevioletred;
+}
+.image{
+    margin-bottom:30px;
+}
+.chithra{
+    width:100%;
+    height:100%
+}
+#a2>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    margin-left:20px;
+}
+#a2>div:nth-child(2){
+    justify-content: space-between;
+    padding:0px 60% 0px 0px
+}
+#a2>div:nth-child(1)>p{
+    margin-right:20px;
+    font-size: 30px;
+    color:blue
+}
+#a2>div:nth-child(2){
+    margin-left:20px;
+    font-size:30px;
+    margin-top:20px;
+}
+#a2>p{
+    font-size:25px;
+    margin-left: 20px;
+}
+.calender{
+    height:200px;
+    width:25%;
+    background-color: brown;
+    margin-bottom: 60%;
+    overflow-y: scroll;
+    border-radius: 5px;
+    box-shadow: #f4f4f4;
+    position: fixed;
+
+}
+#date{
+    display: flex;
+    list-style: none;
+    margin-top:80px;
+}
+.calender>h2{
+    position: fixed;
+    margin-left:5%;
+    color:bisque;
+    margin-top: 10px;
+}
+.calender button{
+    height:40px;
+    width: 40px;
+    border-radius:4px;
+}
+.calender button:hover{
+    background-color: cadetblue;
+    height:60px;
+    width:60px;
+    margin-bottom:10px;
+}
