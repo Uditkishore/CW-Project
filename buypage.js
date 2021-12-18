@@ -36,3 +36,8 @@ button.innerHTML=i
 list.append(button)
 dat.append(list)
 }
+vichithra.addEventListener("click",openpayment)
+function openpayment(){
+  window.location.href="payment.html"
+
+}
