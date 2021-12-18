@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            height: 140px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            cursor:pointer;
+        }
+    
+        .header{
+            /* border: 1px solid teal; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            
+        }
+        #logo{
+            margin-left: 200%;
+            height: 50px;
+        }
+        .right{
+            /* border: 1px solid red; */
+            height: 100%;
+            width: 10%;
+            margin-left: 65%;
+        }
+        .twitter{
+            height: 19px;
+            margin-top: 6%;
+        }
+        .facebook{
+            height: 23px;
+            margin-top: 6%; 
+        }
+        .bottom{
+            
+            margin-left: 16%;
+            display: flex;
+            width: 30%;
+        }
+        hr{
+            height: 25px;
+            margin-top: 3%;
+        }
+        a{
+        text-decoration-line: none;
+        color: #202020;
+        font-family: "Open Sans", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        .content{
+           margin-top: 1%;
+            height: 950px;
+            display: grid;
+            grid-template-rows: repeat(2,440px);
+            grid-template-columns: repeat(4,310px);
+            grid-gap: 15px;
+            background-color: #E7E7E7;
+           
+          
+            width: 98%;
+            margin-left: 1%;
+        }
+        .content > div{
+           font-family: "Open Sans", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: white;
+        }
+        img{
+            height: 192px;
+            /* width: 310px; */
+            
+        }
+        /* .content >div >img{
+            background-size: 100%;
+            background-position: center;
+        }
+        .content >div >img:hover{
+            background-size: 150%;
+            background-position zoom: ;
+        } */
+        /* img:hover{
+            background-size: 150%;  
+        } */
+
+        @media only screen and (min-width: 0px ) and (max-width:376px) {
+  .content div{
+    display: none;
+  }
+}
+        .bottom2{
+            
+            height: 1800px;
+            width: 100%;
+           
+        }
+     .bimg{
+         height: 350px;
+         /* margin-left: 20%; */
+         margin-top: 5%;
+         width: 100%;
+         border-radius: 3%;
+     }
+     .h2con{
+        font-family: "Open Sans", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+     }
+     .bottomcontent{
+         width: 45%;
+        
+         margin-left: 20%;
+     }
+     .section{
+         border: 1px solid black;
+         width: 25%;
+         height: 500px;
+         margin-left: 72%;
+        
+     }
+     .footer{
+         background-color: #35383C;
+         border: 1px solid #35383C;
+         height: 300px;
+         width: 100%;
+     }
+     .fcon{
+        color: white;
+        justify-content: space-between;
+         font-family: "Open Sans", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+     }
+
+     .fcon1{
+        color: white;
+        justify-content: space-between;
+        margin-left: 10%;
+         font-family: "Open Sans", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+     }
+     .footerc{
+        color: white;
+        margin-top: 3%;
+        font-size: 20px;
+        margin-left: 10%;
+     }
+     .footer a{
+         color: white;
+         margin-left: 1%;
+         font-size: 20px;
+         margin-top: 1%;
+         justify-content: space-around;
+     }
+     .copyright{
+         color: white;
+         margin-top: 3%;
+         /* margin-left: 10%; */
+         /* padding-left: 10%; */
+         
+         background-color: #282B2E;
+         height: 70px;
+         width: 100%;
+         /* border: 1px solid red; */
+         display: flex;
+         
+     }
+     .right2{
+            /* border: 1px solid red; */
+            /* height: 100%; */
+            width: 10%;
+            margin-left: 65%;
+        }
+        .bcontent{
+            margin-left: 2%;
+        }
+        .effect:hover{
+            color: #FF6497;
+            border-top: brown;
+        }
+        .bottom:hover{
+            border-top: brown;
+        }
+        a
+        {
+            width:300px;
+        }
+   
+    </style>
+</head>
+<body id="suraj" onclick = "mysuraj()">
+    <div class="container">
+    <div  class="header">
+        <a href=""><img onclick = "mysuraj()" id="logo" src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2019/07/168.png" alt=""></a>
+        <div class="right"><a href="https://twitter.com/dineout_india/"><img class="twitter" src="data:image/png;base64,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" alt=""></a>
+        <a href="https://www.facebook.com/dineout.co.in/"><img class="facebook" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt=""></a>
+        <a href=""><img class="facebook" src="https://lh3.googleusercontent.com/proxy/ZySoVMecScox3WLZC6wwDkO6FmN_NYihR1Ev3vEqf7ODZD3nG2tQe3Sro7T8IaOU0U5-9hsrMf2V5Ef67_cLy2_mtTLZR9CZaswZ4Z7kZMUceu9zIHtaa4BfeFXgb6_J0vaxa2TMtCnhf3heSso8o1sFxasa" alt=""></a>
+        <a href=""><img class="facebook" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjc1uoVw61qaGpjlHR8Pygx1cNBMK1C41wze5NrppdvV7QGSvQK9ibsYP0DLrzPYjeVY&usqp=CAU" alt=""></a>
+        </div>
+       
+    </div>
+    <div class="bottom">
+   <a href=""><h4 class="effect">Dineout Passport</h4></a>
+    <hr>
+    <a href=""><h4 class="effect">Corporate Updates</h4></a>
+    <hr>
+    <a href=""><h4 class="effect">Dineout Cities</h4></a>
+    <hr>
+    <a href=""><h4 class="effect">Top Homechefs</h4></a>
+    </div>
+</div>
+
+<div class="content">
+
+    <div class="box1"><a    href="https://www.dineout.co.in/blog/looking-for-some-amazing-food-and-happening-gigs-around-town-visit-mic-drop/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-21-705x268.png" width=310px; alt=""></a>
+        <div class="bcontent">
+        <h3>Looking For Some Amazing Food And Happening Gigs Around Town? Visit Mic Drop</h3>
+<h4>Offer: Flat 25% off the total bill</h4>
+<h4>A perfect combination of</h4>
+<p>14th December 2021</p>
+</div>
+</div>
+<div class="box2"><a href="https://www.dineout.co.in/blog/harry-potter-quiz-bake-a-cake-well-tell-which-hogwarts-house-you-belong-to/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Blog-9-705x268.jpg" width=310px; alt="">
+</a>
+    <div class="bcontent">
+    <h3>Harry Potter Quiz: Bake a Cake & We’ll Tell Which Hogwarts House you Belong to!</h3>
+    <h4>Offer: Flat 25% off the total bill</h4>
+        <h4>Fan of desserts and Harry Potter? Well,well,well, you're...</h4>
+
+        <p>12th December</p>
+        </div>
+</div>
+<div class="box3">
+   <a href="https://www.dineout.co.in/blog/a-dreamy-candlelight-dinner-at-barish-moonbar-brewery-is-sure-to-make-you-feel-some-love-in-the-air/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/WhatsApp-Image-2021-11-19-at-14.41.18-705x268.jpeg" width=310px; alt=""></a> 
+    <div class="bcontent">
+    <h3>A Dreamy Candlelight Dinner at Barish Moonbar & Brewery Is Sure To Make You Feel Some Love in The Air!</h3>
+    <h4>Offer: Flat 25% off the total bill</h4>
+   
+    <h4>Perfect place to Have...</h4>
+    <p>19th December 2021</p>
+    </div>
+</div>
+<div class="box4">
+   <a href="https://www.dineout.co.in/blog/searching-for-a-perfect-place-to-relish-authentic-south-indian-delicacies-head-out-to-dasaprakash/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-20-705x268.png" width=310px; alt=""></a> 
+    <div class="bcontent">
+    <h3>Searching For A Perfect Place to Relish Authentic South Indian Delicacies? Head Out To Dasaprakash!</h3>
+    <h4>Offer: Flat 15% off the total bill</h4>
+    <h4>Aunthentic to the core</h4>
+    <!-- <h4>Founded...</h4> -->
+    <p>9th December 2021</p>
+</div>
+</div>
+
+<div class="box5">
+    <a href="https://www.dineout.co.in/blog/dineout-passport-experiences-jazz-malt-at-the-club-lounge-sheraton-hyderabad/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-705x268.png" width=310px; alt=""></a>
+    <div class="bcontent">
+    <h3>Dineout Passport Experiences: Jazz & Malt at The Club Lounge, Sheraton Hyderabad</h3>
+    <h4>An evening to remember, an evening to cherish. When great brands…</h4>
+    <p>3rd December 2021</p>
+    </div>
+</div>
+<div class="box6">
+    <a href="https://www.dineout.co.in/blog/spectacular-to-the-power-infinity-bookmark-this-restro-bar-for-a-unique-gastronomical-experience/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-19-705x268.png" width=310px; alt="">
+    </a> 
+    <div class="bcontent">
+    <h3>Spectacular To The Power Infinity: Bookmark This Restro-Bar For A Unique Gastronomical Experience!</h3>
+<h3>Offer: Flat 25% off the Total Bill</h3>
+<h4>
+    Punjabi Bagh’s stellar…</h4>
+    <p>8th December 2021</p>
+    </div>
+</div>
+<div class="box7">
+  <a href="https://www.dineout.co.in/blog/the-flavours-of-christmas-awaits-you-at-7-old-town-check-it-out/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-16-705x268.png" width=310px; alt="">
+  </a>  
+    <div class="bcontent">
+    <h3>The Flavours of Christmas Awaits You At 7 Old Town! Check it Out!</h3>
+    <h3>Offer: Flat 20% off the Total Bill</h3>
+    <div class="av-masonry-entry-content entry-content" itemprop="text">Offer – 20% off the Total Bill<br>
+        <br>
+        Cost for two – Rs 1700<br>
+        <br>
+        Place…</div>
+        <span>2nd December 2021</span>
+    </div>
+</div>
+<div class="box8">
+   <a href="https://www.dineout.co.in/blog/step-out-with-dineout-to-explore-the-coolest-events-around-you-with-its-newest-feature/"><img src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/Untitled-design-15-705x268.png" width=310px; alt="">
+   </a> 
+    <div class="bcontent">
+    <h3>Listen Up Mates! All Your Parties Are Now MOM Approved!</h3>
+    <div itemprop="text">No, not your mom, Duh! She would never approve of anything that…</div>
+    <p>1st December 2021</p>
+    </div>
+</div>
+</div>
+<div class="bottom2">
+    <div class="bottomcontent">
+<a href="https://www.dineout.co.in/blog/top-10-brands-at-the-christmas-wonderland-at-dlf-avenue/"><img class="bimg" src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/12/71279543_1224356884417432_5666944107071668224_n-2-1.jpg" alt=""></a>
+<h2 class="h2con" itemprop="headline">	<a href="https://www.dineout.co.in/blog/top-10-brands-at-the-christmas-wonderland-at-dlf-avenue/" rel="bookmark" title="Permanent Link: Top 10 Brands At The Christmas Wonderland at DLF Avenue">Top 10 Brands At The Christmas Wonderland at DLF Avenue			<span class="post-format-icon minor-meta"></span>	</a></h2>
+<span class="h2con" ><time class="date-container minor-meta updated">1st December 2021</time><span class="text-sep text-sep-date">/</span><span class="comment-container minor-meta"><a href="https://www.dineout.co.in/blog/top-10-brands-at-the-christmas-wonderland-at-dlf-avenue/#respond" class="comments-link"</a></span><span class="text-sep text-sep-comment">/</span><span class="blog-categories minor-meta"><span class="text-sep text-sep-cat">/</span><span class="blog-author minor-meta">by <span class="entry-author-link"><span class="vcard author"><span class="fn"><a href="https://www.dineout.co.in/blog/author/nandini-poddar/" title="Posts by Nandini Poddar" rel="author">Nandini Poddar</a></span></span></span></span></span>
+<p class="h2con">Top 10 brands to check out at the Night Market ‑ Christmas Wonderland on the 4th &amp; 5th of December at DLF Avenue, Saket. 1. The Kefi Co. 2. The Bare Bar 3. Studio Auora 4. House of Finery 5. House of Kastoor 6. Florida 7. Cackle With Love 8. Creative Weirdo 9. The Blue […]<!-- AddThis Advanced Settings above via filter on get_the_excerpt --><!-- AddThis Advanced Settings below via filter on get_the_excerpt --><!-- AddThis Advanced Settings generic via filter on get_the_excerpt --><!-- AddThis Share Buttons above via filter on get_the_excerpt --><!-- AddThis Share Buttons below via filter on get_the_excerpt --></p>
+
+<a href="https://www.dineout.co.in/blog/top-10-brands-at-the-christmas-wonderland-at-dlf-avenue/" class="more-link">Read more<span class="more-link-arrow"></span></a>
+
+</div>
+<div class="bottomcontent">
+    <a href="https://www.dineout.co.in/blog/get-ready-folks-my-bar-headquarters-is-here-to-cross-out-all-your-bar-lists/"><img class="bimg" src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/Untitled-design-14.png" alt=""></a>
+    <h2 class="h2con"><a href="https://www.dineout.co.in/blog/get-ready-folks-my-bar-headquarters-is-here-to-cross-out-all-your-bar-lists/" rel="bookmark" title="Permanent Link: Get Ready Folks! My Bar Headquarters Is Here to Cross Out All Your Bar Lists!">Get Ready Folks! My Bar Headquarters Is Here to Cross Out All Your Bar Lists!			<span class="post-format-icon minor-meta"></span>	</a></h2>
+    
+    <p><span class="h2con" ><time class="date-container minor-meta updated">1st December 2021</time><span class="text-sep text-sep-date">/</span><span class="comment-container minor-meta"><a href="https://www.dineout.co.in/blog/top-10-brands-at-the-christmas-wonderland-at-dlf-avenue/#respond" class="comments-link"</a></span><span class="text-sep text-sep-comment">/</span><span class="blog-categories minor-meta"><span class="text-sep text-sep-cat">/</span><span class="blog-author minor-meta">by <span class="entry-author-link"><span class="vcard author"><span class="fn"><a href="https://www.dineout.co.in/blog/author/nandini-poddar/" title="Posts by Nandini Poddar" rel="author">Nandini Poddar</a></span></span></span></span></span></p>
+    <p><p>Oh the Vibe! A Chic nightspot with brick walls &amp; an industrial vibe, My Bar Headquarters is a spacious bar with rustic decor and soulful live music. With all-wooden furniture,  with […]<!-- AddThis Advanced Settings above via filter on get_the_excerpt --><!-- AddThis Advanced Settings below via filter on get_the_excerpt --><!-- AddThis Advanced Settings generic via filter on get_the_excerpt --><!-- AddThis Share Buttons above via filter on get_the_excerpt --><!-- AddThis Share Buttons below via filter on get_the_excerpt --></p></p>
+    <a href="https://www.dineout.co.in/blog/top-10-brands-at-the-christmas-wonderland-at-dlf-avenue/" class="more-link">Read more<span class="more-link-arrow"></span></a>
+</div>
+<div class="bottomcontent">
+    <a href="https://www.dineout.co.in/blog/refreshing-mojitos-mouth-watering-food-and-a-killer-vibe-here-goes-the-clue/"><img class="bimg" src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/11/Untitled-design-13.png" alt=""></a>
+    <h2 class="h2con">
+        <a href="https://www.dineout.co.in/blog/refreshing-mojitos-mouth-watering-food-and-a-killer-vibe-here-goes-the-clue/" rel="bookmark" title="Permanent Link: Refreshing Mojitos, Mouth Watering Food, And A Killer Vibe, Here Goes The Clue!">Refreshing Mojitos, Mouth Watering Food, And A Killer Vibe, Here Goes The Clue!<span class="post-format-icon minor-meta"></span>	</a>
+    </h2>
+    <!-- <p><span class="h2con" ><time class="date-container minor-meta updated">1st December 2021</time><span class="text-sep text-sep-date">/</span><span class="comment-container minor-meta"><a href="https://www.dineout.co.in/blog/top-10-brands-at-the-christmas-wonderland-at-dlf-avenue/#respond" class="comments-link"</a></span><span class="text-sep text-sep-comment">/</span><span class="blog-categories minor-meta"><span class="text-sep text-sep-cat">/</span><span class="blog-author minor-meta">by <span class="entry-author-link"><span class="vcard author"><span class="fn"><a href="https://www.dineout.co.in/blog/author/nandini-poddar/" title="Posts by Nandini Poddar" rel="author">Nandini Poddar</a></span></span></span></span></span></p> -->
+    <p class="h2con">Offer: flat 30% off the total bill Go Colours! Touted for its vibrant ambience and a refreshing vibe, Clue is here to make you all go gaga about the tempting cuisine, rocking ambience,[…]<!-- AddThis Advanced Settings above via filter on get_the_excerpt --><!-- AddThis Advanced Settings below via filter on get_the_excerpt --><!-- AddThis Advanced Settings generic via filter on get_the_excerpt --><!-- AddThis Share Buttons above via filter on get_the_excerpt --><!-- AddThis Share Buttons below via filter on get_the_excerpt --></p>
+    <a href="https://www.dineout.co.in/blog/refreshing-mojitos-mouth-watering-food-and-a-killer-vibe-here-goes-the-clue/" class="more-link">Read more<span class="more-link-arrow"></span></a>
+</div>
+</div>
+<div class="footer">
+    <div class="footerc">
+<h2 class="fcon">Tags</h2>
+<a class="fcon" href="https://www.dineout.co.in/blog/tag/bangalore/" aria-label="#bangalore (20 items)">#bangalore</a>
+
+<a class="fcon" href="https://www.dineout.co.in/blog/tag/ahmedabadfoodies/" aria-label="#ahmedabadfoodies (3 items)">#ahmedabadfoodies</a>
+<a href="https://www.dineout.co.in/blog/tag/bangalorefoodies/" class="tag-cloud-link tag-link-272 tag-link-position-3"  aria-label="#bangalorefoodies (15 items)">#bangalorefoodies</a>
+<a href="https://www.dineout.co.in/blog/tag/beerinbangalore/" class="tag-cloud-link tag-link-42 tag-link-position-6"  aria-label="#beerinbangalore (4 items)">#beerinbangalore</a>
+<a href="https://www.dineout.co.in/blog/tag/breweries/" class="tag-cloud-link tag-link-44 tag-link-position-7"  aria-label="#breweries (4 items)">#breweries</a>
+<a href="https://www.dineout.co.in/blog/tag/buffets/" class="tag-cloud-link tag-link-278 tag-link-position-8" aria-label="#buffets (10 items)">#buffets</a>
+<a href="https://www.dineout.co.in/blog/tag/cafes/" class="tag-cloud-link tag-link-261 tag-link-position-9"  aria-label="#cafes (4 items)">#cafes</a>
+<a href="https://www.dineout.co.in/blog/tag/delhifoodies/" class="tag-cloud-link tag-link-268 tag-link-position-10"  aria-label="#delhifoodies (10 items)">#delhifoodies</a>
+<a href="https://www.dineout.co.in/blog/tag/finedining/" class="tag-cloud-link tag-link-284 tag-link-position-11"  aria-label="#finedining (7 items)">#finedining</a>
+<a href="https://www.dineout.co.in/blog/tag/finedining-delhifoodies/" class="tag-cloud-link tag-link-512 tag-link-position-12"  aria-label="#finedining #delhifoodies (10 items)">#finedining #delhifoodies</a>
+<a href="https://www.dineout.co.in/blog/tag/foodie/" class="tag-cloud-link tag-link-52 tag-link-position-13" aria-label="#foodie (16 items)">#foodie</a>
+<a href="https://www.dineout.co.in/blog/tag/foodlovers/" class="tag-cloud-link tag-link-250 tag-link-position-14" aria-label="#foodlovers (8 items)">#foodlovers</a>
+<a href="https://www.dineout.co.in/blog/tag/hyderbad/" class="tag-cloud-link tag-link-271 tag-link-position-15" aria-label="#hyderbad (3 items)">#hyderbad</a>
+<a href="https://www.dineout.co.in/blog/tag/luxurydining/" class="tag-cloud-link tag-link-522 tag-link-position-16" aria-label="#Luxurydining (21 items)">#Luxurydining</a>
+<a href="https://www.dineout.co.in/blog/tag/mumbaifoodies/"   aria-label="#mumbaifoodies (6 items)">#mumbaifoodies</a>
+</div>
+<div class="copyright">
+ <p class="fcon1">  © Copyright - Dineout</p> 
+  <div class="right2"><a href="https://twitter.com/dineout_india/"><img class="twitter" style="height: 25px;" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt=""></a>
+        <a href="https://www.facebook.com/dineout.co.in/"><img class="facebook" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt=""></a>
+        <a href=""><img class="facebook" src="https://lh3.googleusercontent.com/proxy/ZySoVMecScox3WLZC6wwDkO6FmN_NYihR1Ev3vEqf7ODZD3nG2tQe3Sro7T8IaOU0U5-9hsrMf2V5Ef67_cLy2_mtTLZR9CZaswZ4Z7kZMUceu9zIHtaa4BfeFXgb6_J0vaxa2TMtCnhf3heSso8o1sFxasa" alt=""></a>
+        <a href=""><img class="facebook" src="https://image.similarpng.com/very-thumbnail/2020/07/Linkedin-logo-on-transparent--background-PNG.png" alt=""></a>
+        </div>
+</div>
+</div>
+</body>
+</html>
+<script>
+    document.querySelector("#suraj")
+    function mysuraj()
+    {
+        window.location.href="landing.html"
+    }
+</script>

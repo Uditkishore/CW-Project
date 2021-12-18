@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #fullbox
+        {
+            width:30%;
+            height:500px;
+             border: 1px solid #5d1241; 
+            margin:auto;
+            background-color: #eeeeee;
+            border-radius: 10%;
+            
+        }
+        #one
+        {
+            width:100%;
+            height:13%;
+            /* border:1px solid chartreuse; */
+            font-family: Metropolis;
+             font-weight: 500;
+            
+        }
+        #two
+        {
+            width:100%;
+            height:50%;
+            /* border:1px solid teal; */
+        }
+
+        #two-1
+        {
+            width:90%;
+            height:30%;
+            /* border:1px solid gold; */
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        #two-2
+        {
+            width:90%;
+            height:30%;
+            /* border:1px solid hotpink; */
+            margin-left: 20px;
+            display:flex;
+           
+        }
+
+        #two-21
+        {
+            width:50%;
+            height:100%;
+            /* border:1px solid forestgreen */
+        }
+        #two-22
+        {
+            width:50%;
+            height:100%;
+            /* border:1px solid rgb(34, 80, 139) */
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "fullbox">
+        <div id ="one">
+            <h2 style= " font-family: Metropolis;font-weight: 500; margin-left: 25px;">Enter Credit / Debit card details</h2>
+        </div>
+        <hr>
+        <div id ="two">
+            <div id = "two-1">
+                <lable>CARD NUMBER</lable>
+                <br/>
+                <input  style =" height:40px; border-radius: 10px; width:350px" type = "text" placeholder="enter card number"/>
+            </div>
+            <div id= "two-2">
+               <div id ="two-21">
+                <lable>EXPIRY</lable>
+                <br/>
+                <input  style =" height:40px; border-radius: 10px; width:150px" type = "text" placeholder="MM/YY"/>
+               </div>
+               <div id = "two-22">
+                <lable style= "margin-left: 10px;">CVV</lable>
+                <br/>
+                <input  style =" margin-left:10px; height:40px; border-radius: 10px; width:160px" type = "text" placeholder="CVV"/>
+               </div>
+            </div>
+            <div id = "two-3">
+                <input  style = " margin-left:22px"type="checkbox" id ="vehicle1">
+           <label  style = "font-family: Metropolis;"  for="vehicle1"> securly save this card for future payments</label><br>
+           <img  id = "gateway"  onclick = "mygateway() "     style = "  margin-left:22px; margin-top:30px;width:300px; cursor:pointer;" src ="paylastpage.png" height = 40px/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("#gateway")
+    
+function mygateway()
+    {
+        window.location.href="page4(sucessfull).html"
+    }
+</script>
