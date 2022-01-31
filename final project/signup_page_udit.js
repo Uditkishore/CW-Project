@@ -13,7 +13,42 @@ document.querySelector("#form").addEventListener("submit", function(event){
        passcode: password
 
    }
-    signupDataArr.push(signupDataObj);
-    localStorage.setItem("Database",JSON.stringify(signupDataArr));
-    window.location.href= "landing.html"
+
+const correct_Data = () =>{
+    for(let key in signupDataObj){
+        if(signupDataObj[key] == ""){
+           return false;
+            break;
+        }
+    }
+}
+
+
+
+if(correct_Data() == false){
+    alert("Please fill All the Datails")
+}
+else{
+
+    alert("Sing-up Successful")
+      signupDataArr.push(signupDataObj);
+     localStorage.setItem("Database",JSON.stringify(signupDataArr));
+     window.location.href = "index.html"
+
+}
+
+ 
+   
+
+
+    
+   
+
+
+
+
+    
+
+  
+ 
 })

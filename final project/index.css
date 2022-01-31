@@ -1,0 +1,614 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+.headbar {
+  width: 100%;
+  /* position: fixed; */
+  height: 70px;
+  background-color: #fff;
+  display: grid;
+  margin: auto;
+  align-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "a a b b c c c c c c d . ";
+}
+.logo {
+  grid-area: a;
+  margin-left: 100px;
+}
+.locationBox {
+  grid-area: b;
+  /* background-color: yellowgreen; */
+}
+#selectLocation {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 13px;
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 5px;
+  border: 0.1px solid gray;
+  /* background-color: yellowgreen; */
+}
+.fa-map-marker-alt {
+  position: absolute;
+  margin-top: 9px;
+  margin-left: 8px;
+  color: gray;
+}
+.pages {
+  grid-area: c;
+  display: flex;
+  justify-content: space-evenly;
+}
+.pages > p:hover {
+  color: #ff645a;
+  cursor: default;
+}
+.login {
+  grid-area: d;
+}
+.login > button {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #ff645a;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.login > button:hover {
+  background-color: #f21d0e;
+}
+.searchbar {
+  height: 400px;
+  background-image: url("https://im1.dineout.co.in/images/uploads/misc/2021/Mar/31/oldherobannerwebfinal_bau.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.restaurantSearch {
+  width: 82%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.slogon {
+  color: white;
+  font-size: 36px;
+  margin-top: 135px;
+}
+.slogonSpan {
+  color: #ff645a;
+}
+.restaurantTextArea {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#restaurantSearchBox {
+  width: 85%;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 18px;
+}
+#restaurentSearchButton {
+  width: 12%;
+  height: 40px;
+  background-color: #ff645a;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+#restaurentSearchButton:hover {
+  background-color: #f21d0e;
+}
+.fa-search {
+  color: #ff645a;
+  font-size: 20px;
+}
+
+/* Restaurants near you */
+
+.restaurants_near {
+  width: 100%;
+  height: 230px;
+}
+.restaurants_near_section {
+  width: 84%;
+  height: 100%;
+  margin: auto;
+}
+.restaurants_near_head {
+  color: black;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurants_near_content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.restaurants_near_content > div {
+  border-radius: 8px 8px 4px 4px;
+}
+.restaurants_near_content > div:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.reataurants_near_description {
+  display: grid;
+  grid-template-rows: 1.2fr 1fr;
+  /* background-color: blueviolet; */
+}
+.restaurants_near_content_image1 {
+  background-image: url("https://im1.dineout.co.in/images/uploads/restaurant/sharpen/4/e/y/p4037-1633679716615ff964d24d7.jpg?tr=tr:n-large");
+  background-position: center;
+  background-size: cover;
+  border-bottom: 2px solid #f1635c;
+  border-radius: 8px 8px 0px 0px;
+}
+.restaurants_near_content_image1:hover {
+  background-size: 105%;
+}
+.restaurants_near_content_image2 {
+  background-image: url("https://im1.dineout.co.in/images/uploads/restaurant/sharpen/9/p/p/p9245-15845271395e71f723d5b78.jpg?tr=tr:n-large");
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+.restaurants_near_content_image2:hover {
+  background-size: 105%;
+}
+.restaurants_near_content_image3 {
+  background-image: url("https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/y/s/p54070-15561868435cc186db9c3ef.jpg?tr=tr:n-large");
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+.restaurants_near_content_image3:hover {
+  background-size: 105%;
+}
+.restaurants_near_content_image4 {
+  background-image: url("https://im1.dineout.co.in/images/uploads/restaurant/sharpen/4/e/y/p4037-1633679716615ff964d24d7.jpg?tr=tr:n-large");
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+.restaurants_near_content_image4:hover {
+  background-size: 105%;
+}
+.restaurants_near_content_descriptin {
+  /* background-color: #f0645b; */
+  padding: 10px 10px 0px 10px;
+}
+.descri_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.descri_div > div > h5 {
+  font-size: 16px;
+}
+.descri_div > div > p {
+  font-size: 12px;
+  padding-left: 2px;
+}
+.descri_div > div > button {
+  background-color: #8cbb0f;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 5px 10px;
+}
+hr {
+  margin-top: 10px;
+}
+.descri_discount {
+  color: #54bd8a;
+}
+
+/*  Featured Restaurants section */
+
+.restaurants_near_content_images1 {
+  background-image: url("https://im1.dineout.co.in/images/uploads/restaurant/sharpen/4/q/a/p49771-15439231845c0665f0e0aa5.jpg?tr=tr:n-large");
+  background-position: center;
+  background-size: cover;
+  border-bottom: 2px solid #f1635c;
+  border-radius: 8px 8px 0px 0px;
+}
+.restaurants_near_content_images1:hover {
+  background-size: 105%;
+}
+.restaurants_near_content_images2 {
+  background-image: url("https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/n/w/p28300-1479205935582ae42f5e2fc.jpg?tr=tr:n-large");
+  background-position: center;
+  background-size: cover;
+  border-bottom: 2px solid #f1635c;
+  border-radius: 8px 8px 0px 0px;
+}
+.restaurants_near_content_images2:hover {
+  background-size: 105%;
+}
+.restaurants_near_content_images3 {
+  background-image: url("https://im1.dineout.co.in/images/uploads/restaurant/sharpen/8/n/r/p88725-16295461836120e6c78e5d6.jpg?tr=tr:n-large");
+  background-position: center;
+  background-size: cover;
+  border-bottom: 2px solid #f1635c;
+  border-radius: 8px 8px 0px 0px;
+}
+.restaurants_near_content_images3:hover {
+  background-size: 105%;
+}
+.restaurants_near_content_images4 {
+  background-image: url("https://im1.dineout.co.in/images/uploads/restaurant/sharpen/4/q/a/p44438-15422846545bed656ec067e.jpg?tr=tr:n-large");
+  background-position: center;
+  background-size: cover;
+  border-bottom: 2px solid #f1635c;
+  border-radius: 8px 8px 0px 0px;
+}
+.restaurants_near_content_images4:hover {
+  background-size: 105%;
+}
+
+/* Horizontal Lines */
+
+.horizontal_line {
+  width: 100%;
+  height: 5px;
+  background-color: #f3f3f3;
+}
+.horizontalLine_small {
+  width: 100%;
+  height: 2px;
+  background-color: #f3f3f3;
+}
+/* Login Box Model */
+.loginContainer {
+  box-sizing: border-box;
+  width: 100%;
+  height: 2500px;
+  display: none;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  font-family: Metropolis, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+.loginBox {
+  width: 450px;
+  height: 360px;
+  margin-top: 50px;
+  padding: 0px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+.loginText {
+  color: salmon;
+}
+#email,
+#password {
+  margin-top: 15px;
+  padding: 10px;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid gray;
+}
+#loginBtn,
+#signupBtn {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  background-color: salmon;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.loginvia {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.border1 {
+  width: 35%;
+  margin-top: 6px;
+  height: 1px;
+  background-color: black;
+}
+.border2 {
+  width: 35%;
+  margin-top: 6px;
+  height: 1px;
+  background-color: black;
+}
+#close {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 60px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+/* Best Offers Area*/
+
+.bestOffers {
+  width: 100%;
+  height: 410px;
+  background-color: #f3f3f3;
+}
+
+.bestOfferContainer {
+  width: 82%;
+  height: 80%;
+  margin: auto;
+}
+#head {
+  font-family: Metropolis, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 80px;
+  color: #333333;
+}
+#BestOfferImage {
+  width: 80%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+#BestOfferImage > div {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#BestOfferImage > div > img {
+  width: 100%;
+}
+
+/*  Post Card Sibaji Panda */
+
+#box1 {
+  display: grid;
+  grid-template-columns: 550px 550px;
+  grid-gap: 20px;
+  justify-content: center;
+}
+#two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 243px 243px;
+  grid-gap: 10px;
+}
+#two > div {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 200px 200px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border-radius: 5px;
+}
+#oneone {
+  height: 65%;
+  width: 100%;
+}
+#onetwo {
+  height: 35%;
+  width: 100%;
+  border-top: 4px solid #f0645b;
+  display: flex;
+  justify-content: center;
+  font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+#onetwo > div:nth-child(1) {
+  height: 90%;
+  width: 75%;
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+/* Mobile App Download Suraj */
+
+#mobileApp {
+  width: 83%;
+  height: auto;
+  display: flex;
+  margin: auto;
+}
+#left {
+  width: 50%;
+  height: 350px;
+  margin-left: 5%;
+}
+#right {
+  width: 40%;
+  margin-right: 5%;
+}
+h2 {
+  font-family: Metropolis, -apple-system, BlinkMacSystemFont, Helvetica Neue,
+    Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  margin-top: 40px;
+}
+h1 {
+  font-family: Metropolis, -apple-system, BlinkMacSystemFont, Helvetica Neue,
+    Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(255, 100, 90);
+  line-height: 60px;
+}
+p {
+  font-family: Metropolis, -apple-system, BlinkMacSystemFont, Helvetica Neue,
+    Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+}
+
+#mobileNumber {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  overflow: visible;
+  border: 0.5px solid #efefef;
+  width: 80%;
+  border-radius: 2px;
+  height: 45px;
+  padding: 0 12rem 0 3rem;
+  margin-top: 3%;
+}
+.btn {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inherit;
+  line-height: inherit;
+  outline: none;
+  border: none;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background: #ff645a;
+  color: #fff;
+  /* position: absolute; */
+  margin-right: 49%;
+  right: 0px;
+  height: 45px;
+  padding: 0 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 1.2%;
+}
+#gplay {
+  margin-top: 5%;
+}
+.btn:hover {
+  background-color: #f30f00;
+}
+
+/* Footer Part Walson */
+#footer {
+  width: 100%;
+  color: rgb(113, 113, 113);
+  line-height: 30px;
+}
+#places {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 89%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  line-height: 30px;
+}
+a {
+  text-decoration: none;
+  color: rgb(113, 113, 113);
+}
+#places > ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+h4 {
+  margin-left: 40px;
+  color: #ff645a;
+}
+.smalldiv {
+  width: 30px;
+  background-color: rgb(226, 89, 110);
+  margin-left: 40px;
+  height: 1px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.subhr {
+  background-color: #ff645a;
+}
+#catlist {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 89%;
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#catlist ul {
+  list-style: none;
+}
+#logos {
+  width: 100%;
+  /* margin-left: 40%; */
+  margin-top: 60px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 25px;
+}
+#logos div {
+  text-align: center;
+  line-height: 25px;
+}
+#copy {
+  /* background-color: gray; */
+  width: 20%;
+  margin: auto;
+  margin-left: 517px;
+}
+#copy > ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: space-evenly;
+}
+a:hover {
+  color: black;
+}
