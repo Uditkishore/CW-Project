@@ -20,7 +20,12 @@ HTML, CSS, JavaScript
 4. Payment page.
 5. OTP generation
 
-## Our Team
+<h3>Contributers</h3>
+
+<a href = "https://github.com/Uditkishore"><img src = "https://avatars.githubusercontent.com/u/95956949?v=4"  width=100px/></a>
+<a href = "https://github.com/sivajipsb"><img src = "https://avatars.githubusercontent.com/u/22596842?v=4"  width=100px/></a>
+<a href = "https://github.com/surajpa123"><img src = "https://avatars.githubusercontent.com/u/77233053?v=4"  width=100px/></a>
+<a href = "https://github.com/walsonFerrao"><img src = "https://avatars.githubusercontent.com/u/96103529?v=4"  width=100px/></a>
 
 ## Feedback
 
