@@ -5,7 +5,7 @@
 
 - Dineout App provides you with exciting offers on a plethora of restaurants, exclusive discounts on buffets, complimentary dishes & a lot more. Get up to 50% off on food & drinks. Discover new places, cuisines & premium restaurants without the fear of over-spending.
 
-- You can visit @ https://dinout.vercel.app/
+- You can visit @ https://dinout-zeta.vercel.app/
 
 ## Introduction
  We have built this website using HTML, CSS, JavaScript. We used HTML to build the basic structure of our webpage and we used CSS to add styling features, and Javascript is used for adding functionalities to our web page.
